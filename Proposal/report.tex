@@ -39,10 +39,10 @@ and vegetation.
 
 One area of computer graphics that has not seen as wide adoption in
 real-time games is physically-based volumetric effects. This is in part due to
-the high memory and compute requirements associated with the storage, simulation
-and rendering of volumetric grids. Techniques for modelling gaseous fluids
+the high memory and compute requirements associated with storign, simulating
+and rendering volumetric grids. Techniques for modelling gaseous fluids
 such as smoke and fire have remained relatively constant over the years, relying
-on simple particle systems, sprite billboarding, and/or pre-rendered animations to give the illusion of
+on simple particle systems, sprite billboarding, and pre-rendered animations to give the illusion of
 volumetric effects. Although relatively cheap and effective for small
 assets, this approach often breaks down when modelling medium to large flows
 that encompass a scene or interact with the scene geometry. Similarly, wind
@@ -50,10 +50,22 @@ systems are often implemented with scrolling noise textures that are effective
 for approximating global interactions in wide open scenes, but do not capture
 flow around large game objects such as trees and buildings.
 
+Specific games examples.
+God of war did a simple diffusion-based wind simulation for cloth, hair
+vegetation.
+Ghost of Tsushima did noise wind effects, 2D
+Both not geometry interaction
+Billboarding for flames, smoke, god rays (illumination),
+CS2 volumetric smoke
+
 For many games, these fluids are of secondary concern to the main gameplay and
 visuals, justifying their simple and cheap approaches. However, there are also
 many opportunities for creating unique player experiences by taking full
-advantage of dynamic general volumetric scene representation.
+advantage of dynamic general volumetric scene representation. Blah blah blah
+give some examples of cool stuff we can do. Billowing smoke and fog, 
+
+
+
 
 
 % The objective of my thesis will be to develop a framework for efficient
