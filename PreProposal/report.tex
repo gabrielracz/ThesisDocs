@@ -1,0 +1,148 @@
+\documentclass[a4paper, 11pt, titlepage]{article}
+% \usepackage{geometry}
+% \usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{setspace}
+\usepackage[backend=biber]{biblatex}
+\addbibresource{references.bib}
+
+% \nocite{*}
+
+\newcommand{\vmiddle}[1]{\begin{tabular}{l} #1 \end{tabular}}
+\renewcommand\tabularxcolumn[1]{m{#1}}% for vertical centering text in X column
+
+
+\title{COMP4906\\
+Honours Thesis Pre-Proposal\\
+Real-Time 3D Volumetric Fire Simulation For Games}
+\author{Gabriel Racz}
+
+\begin{document}
+ \maketitle
+
+\section{Motivation}
+In recent years, rapid improvements in consumer graphics hardware has allowed game
+developers to create more detailed worlds through new rendering and simulation
+techniques. AAA studios have begun leveraging GPU compute to simulate game
+systems such as volumetric light scattering \cite{RDR2}, and interactive wind
+simulations \cite{GOW}. One area that hasn't seen rapid adoption by industry is
+the simulation and rendering of interactive volumetric fire. Although
+interactive fire has seen an increase of representation in new titles such as Read
+Dead Redemption 2, The Legend of Zelda: Breath of the Wild, and Far Cry 5, these
+techniques largely rely on simplistic spreading interactions and either sprite-based
+particle rendering.
+
+2018's God of War utilized a basic volumetric wind fluid simulation to allow to
+interact with vegetation, cloth, and hair \cite{GOW}. I believe
+there is potential to push this idea further and incorporate a more
+detailed fluid simulation that handles fire, boundary conditions with game
+objects, and volumetric lighting.
+
+\section{Objective}
+The objective of this thesis is to research methods that when combined will
+result in a efficient GPU-based volumetric fire and fluid simulation for
+the use in games on current generation hardware. The intended use case would be
+medium-scale simulated burning in the environment around the player with a focus
+on trees and vegetation.
+ This will require working
+within memory and performance constraints such that it can be run in
+real-time, while still budgeting performance for other gameplay systems. To
+achieve pleasant visuals and high performance, a balance of physically based
+models and artistic parameters will be necessary. 
+
+As the field of fire simulation spans many decades, thorough literature review
+will be conducted in order to find areas for improvement and novelty.
+Firstly, I will review and implement some of the standard techniques used
+in past literature for 
+real-time fluid dynamics such as the famous Stable Fluids \cite{stam}, as well
+as other widely referenced works on the simulation and rendering of fire
+\cite{nguyen} \cite{gems}. I intend to develop a rendering and simulation
+engine using the Vulkan graphics API to facilitate GPGPU implementation of the
+various algorithms involved in the thesis. I opt for a custom engine to allow
+for complete control of the graphics hardware in order to achieve my goal of
+simulating and rendering the fluids at 60 fps or higher. The overarching
+constraint of the thesis will be developing a technique that can realistically
+be used in modern games, meaning the total frame budget for both the simulation
+and rendering passes should at minimum be below 16ms.
+
+\pagebreak
+Below are some areas I have identified as potentially providing interesting extensions to
+existing methods.
+
+\begin{itemize}
+    \item Adaptive/hierarchical grid simulation domain. In the majority of past research
+    uniform and static voxel grids are used to simulate the fluid volume.
+    Optimizing the cubic memory and runtime requirements of uniform grids could offer
+    large performance benefits in terms of physics integration speed,
+    level of detail over sparce game worlds, physical interactions
+    with other game objects, and volumetric lighting. I will investigate ``Multigrid
+    integration'' \cite{DCGRID}, dynamic octrees/bounding volume hierarchies,
+    simulation LODs, and selectively budgeting higher resolution simulation/rendering to areas of
+    higher detail.1
+    \item Simulation grid uspcaling utilizing noise and other non-physical techniques
+    to fill in gaps between grid cells. This would offer a method to induce
+    turbulence and other chaotic phenomena that are observed in real fire while
+    saving simulation integration cost. Curl Noise \cite{curl}, Wavelet
+    Turbulence \cite{wavelet}, or other procedural noise methods should be
+    investigated. Experiment with combining grid and particle-based approaches
+    (Eulerian and Lagrangian fluids) to reduce grid resolution needed for fine detail.
+    \item Rendering methods for volumetric lighting and interactions between
+    flames, smoke, and game geometry. I will research techniques for rendering the flames
+    themselves, including level set shells \cite{nguyen}, ray
+    marching/tracing, or other procedural texturing solutions. Investigate
+    methods for representing volumetric light and shadow within the smoke
+    volume using the existing fluid grid.
+    \item Interaction with game geometry. Using game geometry to represent fuel
+    and allowing for the dynamic spreading of flames through a scene. Handle
+    boundary conditions between the fluids and game geometry. Allow for the
+    player to influence the fluid volume through their actions.
+\end{itemize}
+
+\section{Tentative Schedule}
+
+\begin{tabularx}{\textwidth}{|X|X|}
+\hline
+\textbf{Period} & \textbf{Milestones} \\
+\hline
+September 9 - September 22 & 
+\multicolumn{1}{X|}{Initial literature review. Research Stable Fluids \cite{stam} and other well
+established methods for real-time fluid simulation suitable for games.} \\
+\hline
+September 23 - October 6 & \multicolumn{1}{X|}{
+Begin developing the Vulkan engine with the goal of
+reimplementing the techniques within \cite{stam} and \cite{nguyen} using a GPGPU
+pipeline.} \\
+\hline
+October 7 - October 20 & \multicolumn{1}{X|}{
+Finish working prototype of 3D fluid simulation, measure
+performance and identify initial bottlenecks worth further research.
+Begin implementing raster-based pipeline for mesh
+geometry (and continue whenever time is available).} \\
+\hline
+October 21 - November 3 & \multicolumn{1}{X|}{
+Add combustion  to the fluid model (heat transfer, reactants, smoke). In parallel continue researching modern methods
+for rendering and simulating flames. Identify which physical models are
+necessary for realistic visuals.
+}\\
+\hline
+November 4 - November 17 & \multicolumn{1}{X|}{
+Use gathered experience to inform areas of future study. Research methods for
+adaptive grids. Experiment with the addition of noise and/or upscaling.
+Submit rough draft of full proposal.
+}\\
+\hline
+November 18 - December 1 & \multicolumn{1}{X|}{
+Use feedback from proposal rough draft to further direct experiments and
+literature review. Commit to thesis content.
+}\\
+\hline
+December 2 - December 15 & \multicolumn{1}{X|}{
+Finalize and submit thesis proposal. Time permitting, continue more focused
+reading of papers and engine improvements.
+}\\
+\hline
+\end{tabularx}
+
+\pagebreak
+\printbibliography
+\end{document}

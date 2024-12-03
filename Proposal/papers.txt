@@ -1,0 +1,128 @@
+Real-Time Volumetric Smoke Simulation for Games
+file:///C:/Users/Gabi/Downloads/no.ntnu_inspera_74730513_51040793.pdf
+
+GPU-Gems
+https://www.cs.cmu.edu/~kmcrane/Projects/GPUFluid/paper.pdf
+
+Stam Real-time fluid dynamics for games
+https://damassets.autodesk.net/content/dam/autodesk/www/autodesk-reasearch/Publications/pdf/realtime-fluid-dynamics-for.pdf
+
+Visual Simulation of Smoke (Vorticity, Rendering, cubic interpolation)
+https://dl-acm-org.proxy.library.carleton.ca/doi/pdf/10.1145/383259.383260
+
+Smoke Simulation For Large Scale Phenomena (2D slices interpolate 3D, view-aligned grid) rendering
+https://d1wqtxts1xzle7.cloudfront.net/71490133/stanford2003-02-libre.pdf?1635362291=&response-content-disposition=inline%3B+filename%3DSmoke_simulation_for_large_scale_phenome.pdf&Expires=1731612535&Signature=alRI6HeJx6x02YnXIPUeZpuAlY7~3eIQzwXqB6o0jKzgoAvz9vITtM~IjEntkcwjLi7WKVIbgFhFUJDPX061EmG9fAGnOz8TQS-zoX~eUW~mfcM-0eG1MIMn3cFLXEEIS8FCzw7CBD0mSSYGxRV47WzY-OB0w5Sc~wArrHV-diaYBduQqcxfweXuTubreMHgl5zxDbka7JrpStONuvGODTg-Lo7uPkTuUND~VMKYv1EfrOtSaH3avXk-A~9kBTvBqe~Mk8NTK6fTbcz5rjUQHs7cm5Oji2qct0~W-YWgsiU2MzMlNBUDPiPCCef4lD2lYUby4uxoLBR8l9kTNZwMag__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA
+
+*A Novel Algorithm for Incompressible Flow Using Only a Coarse Grid Projection
+https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=5e8972b1f89360ac252e02c82b9bdd59e35ec163
+
+A New Grid Structure for Domain Extension (another hierarchical structure (preserving O(1) access)
+https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=dca2fc3e183b321696d3c557322f056bd474084b
+
+Simulating Natural Phenomena for Computer Graphics (more practical tips for smoke)
+https://www.ljll.fr/~frey/papers/applications/Fedkiw%20R.,%20Simulating%20natural%20phenomena%20for%20computer%20graphics.pdf
+
+Modification of the Euler equations for ‘‘vorticity
+confinement’’: Application to the computation of interacting
+vortex rings Vorticity Confinement Inventor
+https://watermark-silverchair-com.proxy.library.carleton.ca/2738_1_online.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAB48wggeLBgkqhkiG9w0BBwagggd8MIIHeAIBADCCB3EGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMvo9-bOty7Dk9blDKAgEQgIIHQuGCGVzt2opdJXhOiUaBUHHgFMj1iEZLxcySvFs-wC_Xsva4CBN9APL8shYfUxW7d2cx-8P-TOhkTDrKE-HwslkYfkNuQ1a2n23ndcuurA9EKos2NCJojxe072xWtb0ygJX4VhMyenU7CzoDYMsFZgfplUa9yocCVjdw5VcGppmZIznVHebIAmr-URYPZvWUwTWyos3cz_F6RWtVc0OO3s-2FlwhbMA1tpCUXkBxg-feSR5wanPknw1tRy8QpqNjiNQQQ1h2PHStSbWv_P11rSXW6QCJmp6GgMS06esenhq4tVTBJWVMMMVMJf7C0Jvc8ySSRs8bwVsTGLaLz7rLnO38vDVhPxwAzVoDKtU92CYj3sfoZ6iTJ9ACQtEaRJLOewUnpjAXazAf158TWgCc5V1pL7w5s4ivuL-UqKfyR_Selxiga0VySqRH4AAQCfQy4tYmbe8OnxAyJicLNyE3k71ihOiXF9aR6fwGtYEKjCN2lgTiMlm32VjFzYs5ar2_W_DTthgWtSgJpU0UeJlLzUny3cKssFmDCpiOE8JMhJmEvVpAH3uau0seT8Ep1S26SnnVzUQnhJqzKi-VhB-Ws4MBRV29yCrPcHC5998FntgSgWLyiiTyo0IEik6It3utxdNo5k2Gf3Ao4DZ9POBBzqD5Af1G8JyQhBj9r8GAfmhv6aFUoVc99Ud7u2s68D2slaVmyJctdXukrvS7rB6jhCM4sBYWD2qFYO55FwmsyG63FN3ktT1USQ-yg8Wm7PVCs0ssOo0J0UYxE3mZabYdwV5FY2CxHpHw0t9wB-5DtJRIVGlqxwXBQEvez9qYJqD3VtOommBSBD-l5ryZSj2I6LfwlT9gvvARCg2m0awq1sqJlPC77VbMtoKVIicj2v6NWXPPWX7di-amVECQ-LN57ORvgeTjOq1VLrj2AIY3y05spe39HsOOFwMPSH2V1OppQViX0eyKYr3CWSauRUSS6TE-1gOVu3O_eYAXqdMYNj0wzi9L8-lnf7xDOl_ogIoWqn-NG_4N_bzUoNxqVfaDLJLWEjBB1uhaEFIZugsUvtpU1jTT-YOsPsZz5y42P7Nb4ObV8IeS1HKvVsFwJCcyKs2qozixCFuD53j8vFN3xvHnFLPOSq5lPDdxjC8Vr-X6UPvEGPFb3SJuPJ3AxHdNmtAwwFI7eatMWocutf691CajQSwOYl5Z9AsXpbuzSijQXr1Nqkcn1UBvIhIB6xbO2tTHCR0sANize4bu1mRgAk_kUdblJ1tpqvUUBsf-HEzckIwjhZq9jzaQZRFklM94g-t2ouzQdrKw3W9OH6EF-qkXdvu8nd5m_9VyeX6LNyJXJliGUcI4AIlrKV9IGr1hqClQ_fUzalVfb631Zh3vaAcCbVn9lyeyAqI5WcHuog_5N1YUursjz56bNtMBSADkBSrNyQRP5GvjowHDFBUS4IWnmZmJLpo2IDxJjaSUhNCI9JL5nSeL-bXWVFk6-n10DhSytkJyHJX1kr85c0QcRB7mWTGQafj79Rr3AbxqnB9mMnIjswZhpUGOUOIw7UnJZ3qsV6jMMFdbf5On-NWKfq2yB2hEcjTG4wOLd88NRJmeunmT0z5tm_vwEc6VIjB6Ll5g3R4iJ0oGey9I0SmrkOR_5Mse8HNiqPaLxgjba16wWcCihws1E0eOtDSsm-k46pWFNIoZcp0avLi68qUiVqmWb1RrkBpFTS-8_QAgoPlN866hm5CGMcJJUSTY4sN5jDyZy0NRKdjE6KqP2UOMwtsgF2wWbw1hkhB4PWh4OjgjpeV9oJb8U9UOEkO47wXfWeH_a0Jd8B3YLp3m0T9xBXC_TSh32tOwDaH9HqlFraAWmlYD4_J7cZTKtGY5Rw4UsL4zQfsCgaYZVTzvAApoapoL_6aVoTDwXumAbN6HDbomkVUxP0BpjXVzmUkkf129sIjwAHnKD0TJqscOzSbdIi3L-8m8xl0MJ_UVHAV0-YmFrw2PAhkKk-sv_yNnzjxuN7fqEG39y2yeut5uYBvOmeLpUBiKU8xYLg3l75vsvDKjavEk1vAYmFQuTkn7FKS8FFGJ4I6xIl6exF4um3qATUP4FSc_BKZRP3rdztRAm9AIgrPiw25sBYy3QiP_E_WgjCr6QcJGd8zm2k0Otq8Zx9dKmMO-Gioy1_DsUfBm3fH1uJfqNlbsggUeAYNhIBCyFDTb5aKjjmJpe9ci-gwDlB8jAkhkepv4Rgmk3nJoZ8xYWYhSfidJ69r3VlcjlPcx2d7PsUIXSCSDA1Jthw7buisV8jZG4qgrs5PcJZDhnFJQOduC_WzPF9MI9wplqf48lURrqAjVqHyPIDlbFngN3ApLXA8pacHZcKNG39T8obSD2OdWmn90jQzWhAfIAZBzpnNtvtRjqTAEFKdduZ-cf_F_Amn6mzOyusFHJ1HPD-0Q3xJLM92KBU2UJ2WyR6p1fH_KdN6Uh7G--5Xbc02DuhhjSiI
+
+
+FLUID SIMULATION METHODS
+    Bridson R. Fluid Simulation for Computer Graphics,
+    A K Peters: Wellesley, Massachusetts, 2008
+
+OVERVIEW (using Bridson)
+    Navier Stokes Equations formal
+    Eulerian vs. Lagrangian
+    Incompressibility
+    Viscosity (Inviscid flows)
+    Boundary Conditions
+
+    Finite Difference Methods for grids
+    Iterative linear solvers
+        Jacobi
+        Gauss-Seidel
+        Multigrid
+        MacCormack?
+
+STABLE SEMI-LAGRANGIAN
+    Stam
+
+VORTEX METHOD
+    Numerical simulation of the fluid dynamics of 2D rigid body motion with the vortex particle method
+    https://www.sciencedirect.com/science/article/abs/pii/S0021999106003093
+
+    Vortex fluid for gaseous phenomena
+    https://dl.acm.org/doi/abs/10.1145/1073368.1073406
+
+    Real-time smoke simulation with improved turbulence by spatial adaptive vorticity confinement (spline interpolation)
+    https://journals-scholarsportal-info.proxy.library.carleton.ca/pdf/15464261/v22i2-3/107_rsswitbsavc.xml_en
+
+    A Vortex Particle Method for Smoke, Water and Explosions
+    https://dl-acm-org.proxy.library.carleton.ca/doi/pdf/10.1145/1073204.1073282
+
+SPH
+    An SPH Projection Method
+    https://www.sciencedirect.com/science/article/abs/pii/S0021999199962460
+
+    Smoothed Particle Hydrodynamics Techniques for the Physics Based Simulation of Fluids and Solids
+    https://sph-tutorial.physics-simulation.org/pdf/SPH_Tutorial.pdf
+
+PBD
+    Position based fluids
+    https://dl.acm.org/doi/abs/10.1145/2461912.2461984
+
+PIC/FLIP
+
+LBM
+    High Performance Free Surface LBM on GPUs
+    https://www.researchgate.net/publication/349552856_High_Performance_Free_Surface_LBM_on_GPUs
+
+FIRE SIMULATION
+    Simulation and Animation of Fire and Other Natural Phenomena in the Visual Effects Industry
+    https://physbam.stanford.edu/~fedkiw/papers/stanford2003-11.pdf
+
+IMPROVING DETAIL
+
+NOISE
+Curl-Noise for Procedural Fluid Flow
+    https://www.cs.ubc.ca/~rbridson/docs/bridson-siggraph2007-curlnoise.pdf
+
+Wavelet Turbulence for Fluid Simulation
+    https://www.cs.cornell.edu/~tedkim/WTURB/wavelet_turbulence.pdf
+
+SURFACE SIMPLIFICATION
+    Real-time mesh simplification using the GPU
+    https://dl.acm.org/doi/abs/10.1145/1230100.1230128
+
+HIERARCHICAL METHODS
+    *Simulating water and smoke with an octree data structure
+    https://dl-acm-org.proxy.library.carleton.ca/doi/pdf/10.1145/1015706.1015745
+
+    SPGrid: a sparse paged grid structure applied to adaptive smoke simulation
+    https://dl.acm.org/doi/abs/10.1145/2661229.2661269 
+
+    Dcgrid: An adaptive grid structure for memory-constrained fluid simulation on the gpu
+    https://dl.acm.org/doi/abs/10.1145/3522608
+
+    VDB: High-Resolution Sparse Volumes with Dynamic Topology
+    https://dl-acm-org.proxy.library.carleton.ca/doi/pdf/10.1145/2487228.2487235
+
+RENDERING
+    Fast Bresenham
+
+
+flux = flow rate per unit area = density * area * velocity
+
+GPU Linear solvers
+https://www3.nd.edu/~zxu2/acms60212-40212-S12/final_project/Linear_solvers_GPU.pdf
+
+Ghost cells fedkiw
+https://pdf.sciencedirectassets.com/272570/1-s2.0-S0021999100X00447/1-s2.0-S0021999199962368/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIj%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIDZBsjbmgO%2FC96Bos6ckbOelzsP9pFNz3z8V69xkm0oYAiEA5qdWwIbYMRexqyNy%2F37FxOColNo6XDo5REBjwOG86IIqswUIIRAFGgwwNTkwMDM1NDY4NjUiDOAKXs7sQETog8u8qCqQBXZeYNVjrouoNFcS8%2F%2BbmIS4wZ90I6YybJr1jUDnb3zURArJk0cnr7K0ONsmETgmwvKdQlSxq00zvbnNKijKEDXYIJTCAQeP63pyQiBnY23YdkPseXrkgAI3%2BwZtvqRaZaFS5jZY7aepWCurWhcw%2F%2Fxa62jG0Eig%2BVOEku55GWDGM1t8sVcbIbWmISPmz3LQJ2IyzFDtbKnyMW3g1w0Gz3Zewhz9cwx%2BAuDvX1KNkH9VcqdHtKrt7ou5FdyeJtLsmnZqUkbzEXOeaQV3liIbFEPWlmv0CiKXVCqTgoaJ5KnIe%2F8S2ELDMwCmOYlzMl%2Bvse8sW1RJbJdGHS6onyAexYsGdqZ%2BKivtYQA9CZ1ZtvjG1TQ79C8xE%2FG4UHsmVK9ZHEbfiTq1PuVjwSz3GIo%2FGVerq5jGGHnvjRYzkiw8xO3j7%2BBB6fgHcRZKK6WoG%2FipbTH7o6H6p%2BKBnhPoIOHE1cF0gmOUpKi41DJws7QTA7wT2hRmRwukolVeJDKWXIpNothEiAguTsF8kjTP%2FldqHPE%2BbcIsHCE87FXBSk%2Bn591IrrYrq4GfGe%2Fex2Fbt%2BhGeDxtJSoiWcKwWr2cKURTfCU8vxkV5Kqj8HvugBqCu9eIraAUxwCsUs1vGwAn6%2BDnEx%2Bx5lMSDIl7sj2V36q7BTN6opSJI9HYwaC2Cv5p3DiOl%2BNlB4a0fQaXqWfprskBtaR1%2FwZcs9BQX%2FiLZgxGUwzuEF4VjpPiDn4NsZti42KarNN8WMcVMbQ9Q4xkOqefIpLIl%2FVzSWJSeYTufkW2EPVcvOcrFyQ6raJU4YoJxQONQpeiF0NYckhQFub0K%2FgY8v2jX8iUB3LhDWpRYk3ntSQ7RAUdUDXSoZ8%2FwuIA%2FwVVMKK337kGOrEB%2FiTUAqME4N1b9tClKMxCMuaeCITbZ5GSZne%2FzP%2B28jq3RQrYSE4AGUoAOFdZQnP3jVkZKXYPr9MauEDTIIwNyYYOvz0FZFKq0WdxT0r2ZI9pn7O6CGfz8YCbvUuhkcKxWsaiMwSb%2FM83JT%2FT0f5Ht2Rx9ciFGvIsHUIZzde9EA1%2F1EjdHUXCM4pd6DAIaeFL2JsOyQ2wvbyxcMm4mVHj8K3neLZ%2BozmSODb4M%2FjmR9ar&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241116T001432Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTY53OXCBAL%2F20241116%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=673c07d70250f30377c5a39a3c7b64e897286b5aded860923dedfd0fa26fdfd5&hash=4b91fc02114e801cb164d84627992b67e100eb46420aad26156bd5011f18449a&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0021999199962368&tid=spdf-8daea463-9d30-41e6-88db-53ebb2fac643&sid=6f1638ea78bec9405d1900724b1c2b1b7c8fgxrqa&type=client&tsoh=d3d3LXNjaWVuY2VkaXJlY3QtY29tLnByb3h5LmxpYnJhcnkuY2FybGV0b24uY2E%3D&ua=190759005155555b500e51&rr=8e33480a78c07cf6&cc=ca
+
+Fast voxelization
+https://www-cambridge-org.proxy.library.carleton.ca/core/services/aop-cambridge-core/content/view/1F6584AB10D934FD7A0FC656258C1BCE/S1815240615000420a.pdf/a-fast-and-rigorously-parallel-surface-voxelization-technique-for-gpu-accelerated-cfd-simulations.pdf
+
+Fast Slices Voxelization
+https://www-sciencedirect-com.proxy.library.carleton.ca/science/article/pii/S0097849300000388
